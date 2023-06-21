@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;900&display=swap"
+        rel="stylesheet">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Galeria de Fotos</h1>
+            
+        </div>
+        <div>
+            <ul>
+                <li class="item">Menu</li>
+                <li class="item">Produtos</li>
+            </ul>
+        </div>
+    </header>
+    <div id="video">
+        <video loop="true" autoplay="autoplay" muted src="./swirl_-_66262 (1080p).mp4"></video>
+    </div>
+    <small>Vídeo de <a href="https://pixabay.com/pt/users/engin_akyurt-3656355/?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=66262">Engin Akyurt</a> no <a href="https://pixabay.com/pt//?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=66262">Pixabay</a></small>
+    <div class="container">
+        <section id="sobre">
+            <img src="./images/salzburg-89594_640.jpg"
+                    alt="imagem de uma prateleira com diversas marcas e modelos de tênis">
+            <small>Imagem de <a href="https://pixabay.com/pt/users/12019-12019/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=89594">David Mark</a> por <a href="https://pixabay.com/pt//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=89594">Pixabay</a></small>        
+            <div class="sobre">
+                <h2>Sobre a Loja</h2>
+                <hr />
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore praesentium numquam quidem dolorem
+                    eaque, corporis, suscipit repudiandae nemo, quas sint ratione architecto! Officiis voluptatem totam
+                    accusamus dolor impedit? Iusto, maiores!
+                </p>
+            </div>
+        </section>
+    </div>    
+    
+    
+    
+    <div>
+        <button type="button" id="principal">Nova Imagem +</button>
+    </div>
+    <form>
+        <h2>Inserir nova imagem</h2>
+        <input type="url" id="imagemNova" required placeholder="URL da imagem">
+        <button type="submit" class="btnOculto">Adicionar</button>
+        <button type="reset" class="btnOculto" id="botao-cancelar">Cancelar</button>
+    </form>
+    <ul>
+        <li>
+            <img class="imagem" src="./images/foto1.jpg" alt="pintura de um gato">
+            <div class="imagemLink">
+                <a href="./images/foto1.jpg" title="Ver imagem em tamanho real" target="_blank">
+                    Ver imagem em tamanho real
+                </a>
+            </div>
+        </li>
+        <li>
+            <img src="./images/foto2.jpg" alt="foto de um flamingo">
+            <div class="imagemLink">
+                <a href="./images/foto2.jpg" title="Ver imagem em tamanho real" target="_blank">
+                    Ver imagem em tamanho real
+                </a>
+            </div>
+        </li>
+        <li>
+            <img src="./images/foto3.jpg" alt="foto de dois filhotes de cachorro">
+            <div class="imagemLink">
+                <a href="./images/foto3.jpg" title="Ver imagem em tamanho real" target="_blank">
+                    Ver imagem em tamanho real
+                </a>
+            </div>
+        </li>
+        <li>
+            <img src="./images/foto4.jpg" alt="foto de uma flor">
+            <div class="imagemLink">
+                <a href="./images/foto4.jpg" title="Ver imagem em tamanho real" target="_blank">
+                    Ver imagem em tamanho real
+                </a>
+            </div>
+        </li>
+        <li>
+            <img src="./images/foto5.jpg" alt="foto de uma flor">
+            <div class="imagemLink">
+                <a href="./images/foto5.jpg" title="Ver imagem em tamanho real" target="_blank">
+                    Ver imagem em tamanho real
+                </a>
+            </div>
+        </li>
+    </ul>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="main.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</body>
+
+</html>

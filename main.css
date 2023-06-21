@@ -1,0 +1,159 @@
+* {
+
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color: hsl(0, 0%, 100%);
+}    
+body {
+    background: rgb(240, 248, 255);
+    background-repeat: no-repeat;
+    height: 700px;
+}
+
+header {
+    background-color: hsl(26, 1%, 94%);
+    padding: 16px 0;
+    color: hsl(208, 100%, 97%);
+    display: flex;
+    border-bottom: 2px solid #c5c4c7;
+    justify-content: center;
+    text-transform: uppercase;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 0.5rem;
+}
+.item{
+    color: #16222A;
+}
+h1{
+    color: black;
+    background-color: transparent;
+}
+
+form {
+    padding: 24px 0;
+    text-align: center;
+    display: none;
+    background-image:url('./images/folhas.jpg');
+    animation:both animacao 3s;
+}
+
+@keyframes animacao {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position-x: 100%;
+    }
+}
+#video{
+    max-height: 262px;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+}
+video{
+    
+    width:100%;
+}
+small, small>a{
+    font-size: 9px;
+    color: black;
+}
+form h2 {
+    margin-bottom: 16px;
+    color: white;
+    background-color: transparent;
+
+}
+
+input,
+button {
+    padding: 8px;
+}
+button{
+    cursor: pointer;
+}
+.btnOculto{
+    background-color: #0aa71f;
+    color:#E2D0F9;
+    font-weight: 500;
+}
+
+#principal{
+    background-image: linear-gradient(to right, #8b9aa3 0%, #5a8ea8 51%, #8b9aa3 100%);
+    margin: 18px 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 1em #eee;
+    border-radius: 10px;
+    display: block;
+    transition: none;
+}
+#principal:hover{
+    background-position: 100% 0%;
+}
+
+
+
+#botao-cancelar {
+    background-color: #990011;
+    color: #FCF6F5;
+    width: fit-content;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+
+}
+
+ul li {
+    max-width: 100%;
+    list-style: none;
+    max-height: 200px;
+    overflow-y: hidden;
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+ul li img {
+    width: 100%;
+
+}
+
+.imagemLink {
+    padding: 16px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all ease-out 0.2s;
+
+}
+
+.imagemLink:hover {
+    backdrop-filter: blur(10px);
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+    background-color: transparent;
+
+}
+
+.imagemLink:hover {
+    opacity: 1;
+
+
+}
